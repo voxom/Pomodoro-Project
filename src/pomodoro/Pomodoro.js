@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import ChangeDuration from "./ChangeDuration";
 import PlayPauseButtons from "./PlayPauseButtons";
 import DisplayDuration from "./DisplayDuration";
-import { Player } from "video-react";
-import sample from "./sample.mp4";
 
 function Pomodoro() {
   // Timer starts out paused
@@ -61,12 +59,6 @@ function Pomodoro() {
         session={session}
         setSession={setSession}
         isTimerRunning={isTimerRunning}
-      />
-      <Player 
-        src={sample}
-        muted
-        loop
-        autoPlay
       />
     </div>
   );
